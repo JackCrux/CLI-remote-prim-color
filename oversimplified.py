@@ -27,25 +27,22 @@ if (user == "1"):
      print("Prim remotely changed colors to Red.")
      parameters = {'color':'red'}
      info = submitInformation(url,parameters)
-     exit()
 
 if (user == "2"):
 
      print('Prim remotely changed colors to Blue.')
      parameters = {'color':'blue'}
      info = submitInformation(url,parameters)
-     exit()
 
 if (user == "3"):
 
      print("Prim remotely changed colors to Green.")
      parameters = {'color':'green'}
      info = submitInformation(url,parameters)
-     exit()
 
 else:
 
-     print("try again")
+     exit()
 
 
 
