@@ -45,7 +45,7 @@ if (user == "3"):
 
 else:
 
-     print("those aren't numbers")
+     print("try again")
 
 
 
