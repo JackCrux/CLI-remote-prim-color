@@ -1,5 +1,5 @@
-
 import urllib.parse
+
 import urllib.request
 
 def submitInformation(url,parameters):
@@ -7,8 +7,6 @@ def submitInformation(url,parameters):
     req = urllib.request.Request(url)
     net = urllib.request.urlopen(req,encodedParams)
     return(net.read())
-
-url =  "http://simhost-00d19634d4816ce28.agni.secondlife.io:12046/cap/7d1b564f-4630-1d60-23e3-5917bc3d9f75"
 
 print("""
 
@@ -20,30 +18,28 @@ select your color
 
 """)
 
+enter_url = input("enter url : ")
+
 user = input("enter value : ")
 
 if (user == "1"):
 
      print("Prim remotely changed colors to Red.")
      parameters = {'color':'red'}
-     info = submitInformation(url,parameters)
+     info = submitInformation(enter_url,parameters)
 
 if (user == "2"):
 
      print('Prim remotely changed colors to Blue.')
      parameters = {'color':'blue'}
-     info = submitInformation(url,parameters)
+     info = submitInformation(enter_url,parameters)
 
 if (user == "3"):
 
      print("Prim remotely changed colors to Green.")
      parameters = {'color':'green'}
-     info = submitInformation(url,parameters)
+     info = submitInformation(enter_url,parameters)
 
 else:
 
      exit()
-
-
-
-
