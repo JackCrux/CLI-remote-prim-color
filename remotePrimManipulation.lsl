@@ -19,7 +19,7 @@ default
         if ((method == URL_REQUEST_GRANTED) && (id == requestURL) )
         {
             // An URL has been assigned to me.
-            llOwnerSay("SLURL = \""+body+"\"");
+            llOwnerSay(body);
             url = body;
             requestURL = NULL_KEY;
         }
